@@ -1,0 +1,14 @@
+# IDE specific
+.project
+.classpath
+.idea
+.cache
+.DS_Store
+*.im?
+target
+work
+
+# R specific
+*Rcheck
+*Rcheck*
+.Rproj.*
