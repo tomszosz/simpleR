@@ -1,0 +1,16 @@
+
+Showing logs for build [32mtomszosz-simpler-master-hp5lj-11[0m stage [32mfrom-build-pack[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1594760909.0197315,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mtomszosz-simpler-master-hp5lj-11[0m stage [32mfrom-build-pack[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mtomszosz-simpler-master-hp5lj-11[0m stage [32mfrom-build-pack[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mtomszosz-simpler-master-hp5lj-11[0m stage [32mfrom-build-pack[0m and container [32mstep-git-source-tomszosz-simpler-master-hp5lj-mq8q2[0m
+{"level":"error","ts":1594760942.8898416,"caller":"git/git.go:41","msg":"Error running git [fetch --recurse-submodules=yes --depth=1 origin vv0.0.3TODO]: exit status 128\nfatal: couldn't find remote ref vv0.0.3TODO\n","stacktrace":"github.com/tektoncd/pipeline/pkg/git.run\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:41\ngithub.com/tektoncd/pipeline/pkg/git.Fetch\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:93\nmain.main\n\tgithub.com/tektoncd/pipeline/cmd/git-init/main.go:53\nruntime.main\n\truntime/proc.go:203"}
+{"level":"error","ts":1594760944.1589117,"caller":"git/git.go:41","msg":"Error running git [pull --recurse-submodules=yes origin]: exit status 1\nFrom https://github.com/********/simpleR\n * [new branch]      gh-pages   -> origin/gh-pages\n * [new branch]      master     -> origin/master\n * [new tag]         0.0.3TODO  -> 0.0.3TODO\n * [new tag]         v0.0.3TODO -> v0.0.3TODO\nYou asked to pull from the remote 'origin', but did not specify\na branch. Because this is not the default configured remote\nfor your current branch, you must specify a branch on the command line.\n","stacktrace":"github.com/tektoncd/pipeline/pkg/git.run\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:41\ngithub.com/tektoncd/pipeline/pkg/git.Fetch\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:96\nmain.main\n\tgithub.com/tektoncd/pipeline/cmd/git-init/main.go:53\nruntime.main\n\truntime/proc.go:203"}
+{"level":"warn","ts":1594760944.1591125,"caller":"git/git.go:97","msg":"Failed to pull origin : exit status 1"}
+{"level":"error","ts":1594760944.1629715,"caller":"git/git.go:41","msg":"Error running git [checkout vv0.0.3TODO]: exit status 1\nerror: pathspec 'vv0.0.3TODO' did not match any file(s) known to git\n","stacktrace":"github.com/tektoncd/pipeline/pkg/git.run\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:41\ngithub.com/tektoncd/pipeline/pkg/git.Fetch\n\tgithub.com/tektoncd/pipeline/pkg/git/git.go:99\nmain.main\n\tgithub.com/tektoncd/pipeline/cmd/git-init/main.go:53\nruntime.main\n\truntime/proc.go:203"}
+{"level":"fatal","ts":1594760944.16314,"caller":"git-init/main.go:54","msg":"Error fetching git repository: exit status 1","stacktrace":"main.main\n\tgithub.com/tektoncd/pipeline/cmd/git-init/main.go:54\nruntime.main\n\truntime/proc.go:203"}
+[31m
+Pipeline failed on stage 'from-build-pack' : container 'step-git-source-tomszosz-simpler-master-hp5lj-mq8q2'. The execution of the pipeline has stopped.[0m
