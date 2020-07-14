@@ -1,0 +1,26 @@
+
+Showing logs for build [32mmeta-tomszosz-simpler-master-9gt5k-1-tbkd7[0m stage [32mmeta-pipeline[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1594732013.6930783,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32mmeta-tomszosz-simpler-master-9gt5k-1-tbkd7[0m stage [32mmeta-pipeline[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32mmeta-tomszosz-simpler-master-9gt5k-1-tbkd7[0m stage [32mmeta-pipeline[0m and container [32mplace-tools[0m
+
+Showing logs for build [32mmeta-tomszosz-simpler-master-9gt5k-1-tbkd7[0m stage [32mmeta-pipeline[0m and container [32mstep-git-source-meta-tomszosz-simpler-master-9gt5k-gwftg[0m
+{"level":"info","ts":1594732025.7046793,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/********/simpleR.git @ master in path /workspace/source"}
+{"level":"warn","ts":1594732025.7072415,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1594732025.7659776,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32mmeta-tomszosz-simpler-master-9gt5k-1-tbkd7[0m stage [32mmeta-pipeline[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32mmeta-tomszosz-simpler-master-9gt5k-1-tbkd7[0m stage [32mmeta-pipeline[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:
+WARNING: no SHAs to merge, falling back to initial cloned commit
+
+Showing logs for build [32mmeta-tomszosz-simpler-master-9gt5k-1-tbkd7[0m stage [32mmeta-pipeline[0m and container [32mstep-merge-pull-refs[0m
+SKIP merge-pull-refs: Nothing to merge
+
+Showing logs for build [32mmeta-tomszosz-simpler-master-9gt5k-1-tbkd7[0m stage [32mmeta-pipeline[0m and container [32mstep-create-effective-pipeline[0m
+error: failed to load build pack pipeline YAML: /tekton/home/.**/draft/packs/github.com/********/jenkins-x-kubernetes/packs/R/pipeline.yaml: base pipeline file does not exist /tekton/home/.**/draft/packs/github.com/jenkins-x-buildpacks/jenkins-x-classic/packs/R/pipeline.yaml
+[31m
+Pipeline failed on stage 'meta-pipeline' : container 'step-create-effective-pipeline'. The execution of the pipeline has stopped.[0m
